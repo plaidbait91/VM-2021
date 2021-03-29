@@ -2,10 +2,9 @@
   "name": "vm-2021",
   "version": "1.0.0",
   "description": "Website for the fest Verba Maximus",
-  "main": "home.js",
   "scripts": {
-    "dev": "parcel serve src/home.html src/prompts/prompts.html -p 8080 --no-cache",
-    "build": "parcel build src/home.html"
+    "dev": "parcel serve src/index.html -p 8080 --no-cache",
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
