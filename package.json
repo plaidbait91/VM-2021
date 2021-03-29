@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/yashyenugu/VM-2021#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap": "^5.0.0-beta3"
   },
   "devDependencies": {

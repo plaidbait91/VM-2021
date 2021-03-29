@@ -1,14 +1,20 @@
 const navbar = `
-<nav class="navbar navbar-expand-lg navbar-custom">
+<nav class="navbar navbar-expand-lg sticky-top navbar-custom">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Verba Maximus</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a href="https://www.facebook.com/verbamaximus" >
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UC3eomI73rnwHqKK5j7aR-qw" >
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://twitter.com/VerbaMaximus" >
+          <i class="fab fa-twitter"></i>
+        </a>
+          
         </li>
       </ul>
     </div>

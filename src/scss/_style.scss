@@ -3,14 +3,12 @@ body {
     height: 100%;
 }
 
-body {
-    background-color: red;
-}
 
 #navbar-container {
     background-color: #000;
-    border-bottom: 2px solid #f3f;
-    padding: 1rem 0;
+    border-bottom: 1px solid #f3f;
+    padding: 1rem 1rem;
+    background-image: linear-gradient(-180deg, #050024 , #2c0233);
 }
 
 /* change the brand and text color */
@@ -49,6 +47,21 @@ body {
     background-color: #151515;
 }
 
-footer {
-    
+.navbar-custom {
+    .navbar-nav {
+        li {
+            a {
+                color: #00e3ef;
+                transition: all 0.3s ease;
+                padding: 0 1rem;
+                text-decoration: none;
+                i {
+                    font-size: 1.5rem;
+                }
+            }
+            a:hover {
+                color: #f3f;
+            }
+        }
+    }
 }
