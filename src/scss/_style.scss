@@ -1,14 +1,15 @@
 html, 
 body {
     height: 100%;
+    background-image: linear-gradient(-180deg, #050024 , #2c0233);
 }
 
 
 #navbar-container {
     background-color: #000;
-    border-bottom: 1px solid #f3f;
+    border-bottom: 1px solid #ff33ff;
     padding: 1rem 1rem;
-    background-image: linear-gradient(-180deg, #050024 , #2c0233);
+    // background-image: linear-gradient(-180deg, #050024 , #2c0233);
 }
 
 /* change the brand and text color */
@@ -60,7 +61,7 @@ body {
                 }
             }
             a:hover {
-                color: #f3f;
+                color: #ff33ff;
             }
         }
     }
