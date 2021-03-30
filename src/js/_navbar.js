@@ -5,16 +5,19 @@ const navbar = `
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-        <a href="https://www.facebook.com/verbamaximus" >
-          <i class="fab fa-facebook-square"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UC3eomI73rnwHqKK5j7aR-qw" >
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://twitter.com/VerbaMaximus" >
-          <i class="fab fa-twitter"></i>
-        </a>
-          
+          <a class="nav-link" href="https://www.facebook.com/verbamaximus" >
+            <i class="fab fa-facebook-square"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/channel/UC3eomI73rnwHqKK5j7aR-qw" >
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="https://twitter.com/VerbaMaximus" >
+            <i class="fab fa-twitter"></i>
+          </a>
         </li>
       </ul>
     </div>
