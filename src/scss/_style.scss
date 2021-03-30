@@ -18,6 +18,10 @@ body {
 		color: $color-cyan;
 	}
 
+	.nav-item {
+		padding: auto 1.2rem;
+	}
+
 	/* change the color of active or hovered links */
 	.nav-link {
 		color: $color-cyan;

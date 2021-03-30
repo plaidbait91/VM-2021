@@ -1,7 +1,7 @@
 const navbar = `
-<nav class="navbar navbar-expand-lg sticky-top navbar-custom">
+<nav class="navbar navbar-expand sticky-top navbar-custom">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Verba Maximus</a>
+    <a class="navbar-brand" href="../index.html">Verba Maximus</a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
