@@ -44,7 +44,7 @@ main {
 
 		&.active,
 		&:hover {
-			color: $color-pink;
+			color: $color-cyan;
 		}
 	}
 
@@ -134,3 +134,20 @@ main {
 
     border: 1px solid #00e3ef;
 }
+
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $color-red;
+    border-radius: 10px;
+  }
