@@ -12,13 +12,15 @@ main {
 
 #navbar-container {
 	background-color: $black;
-	border-bottom: 1px solid $color-pink;
+	border-bottom: 1px solid $color-cyan;
 	padding: 1rem 1rem;
 }
 
 .navbar-custom {
 	/* change the brand, text color, link color */
-	.navbar-brand,
+	.navbar-brand {
+        color: $color-cyan
+    }
 	.navbar-text,
 	.navbar-link {
 		color: $color-cyan;
@@ -31,8 +33,9 @@ main {
 	/* change the color of active or hovered links */
 	.nav-link {
 		color: $color-cyan;
-		transition: all 0.3s ease;
+		transition: all 0.4s ease;
 		padding: 0 1rem;
+        margin-right: 1rem;
 		text-decoration: none;
 
 		i {
@@ -72,7 +75,7 @@ main {
     .navbar-nav {
         li {
             a {
-                color: #00e3ef;
+                color: #e3544a;
                 transition: all 0.3s ease;
                 padding: 0 1rem;
                 text-decoration: none;
@@ -81,7 +84,7 @@ main {
                 }
             }
             a:hover {
-                color: #ff33ff;
+                color: #64ccec;
             }
         }
     }
@@ -97,8 +100,9 @@ main {
 }
 
 .prompt {
-    transition: all 0.3s ease;
-    padding: 5%;
+    transition: all 0.3s ease-in-out;
+    padding: 5% 0;
+    text-align: center;
     h1 {
         // text-shadow: 3px 5px 25px #64ccec;
         color: #e3544a;
@@ -114,17 +118,19 @@ main {
         color: #e3544a;
         float: left;
         font-size: 5rem;
-        margin-right: 30px;
+        margin-right: 3%;
+        margin-left: 10%;
     }
 }
 
 .prompt:hover {
     background-color: rgba($color: #000000, $alpha: 0.5);
-    padding: 6% 5%;
     
+    padding: calc(5% - 2px) -2px;
+
     h1, i {
         color: #00e3ef;
     }
 
-    border: 2px solid #00e3ef;
+    border: 1px solid #00e3ef;
 }
