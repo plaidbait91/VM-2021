@@ -1,7 +1,13 @@
-html,
+html {
+    height: 100%;
+}
 body {
-	height: 100%;
-	background-image: linear-gradient(-180deg, #050024, #2c0233);
+    
+    min-height: 100%;
+}
+
+main {
+    background-image: linear-gradient(-180deg, #220000, #070000);
 }
 
 #navbar-container {
@@ -88,4 +94,37 @@ body {
     font-size: 4rem;
     color: #fff;
     font-family: "Dosis", Helvetica, Arial, sans-serif;
+}
+
+.prompt {
+    transition: all 0.3s ease;
+    padding: 5%;
+    h1 {
+        // text-shadow: 3px 5px 25px #64ccec;
+        color: #e3544a;
+        font-family: "Dosis", Helvetica, Arial, sans-serif;
+        font-size: 2rem;
+    }
+
+    p {
+        color: #fff;
+    }
+
+    i {
+        color: #e3544a;
+        float: left;
+        font-size: 5rem;
+        margin-right: 30px;
+    }
+}
+
+.prompt:hover {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    padding: 6% 5%;
+    
+    h1, i {
+        color: #00e3ef;
+    }
+
+    border: 2px solid #00e3ef;
 }
