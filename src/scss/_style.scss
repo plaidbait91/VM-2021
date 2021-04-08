@@ -1,153 +1,328 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 body {
-    
-    min-height: 100%;
+  min-height: 100%;
 }
 
 main {
-    background-image: linear-gradient(-180deg, #220000, #070000);
+  background-image: linear-gradient(-180deg, #220000, #070000);
+}
+
+
+@font-face {
+	font-family: 'BlenderPro';
+	src: url('../fonts/Blender Pro Bold.ttf'); 
 }
 
 #navbar-container {
-	background-color: $black;
-	border-bottom: 1px solid $color-cyan;
-	padding: 1rem 1rem;
+  background-color: $black;
+  border-bottom: 1px solid $color-cyan;
+  padding: 1rem 1rem;
 }
 
 .navbar-custom {
-	/* change the brand, text color, link color */
-	.navbar-brand {
-        color: $color-cyan
+  /* change the brand, text color, link color */
+  .navbar-brand {
+    color: $color-cyan;
+  }
+  .navbar-text,
+  .navbar-link {
+    color: $color-cyan;
+  }
+
+  .nav-item {
+    padding: auto 1.2rem;
+  }
+
+  /* change the color of active or hovered links */
+  .nav-link {
+    color: $color-cyan;
+    transition: all 0.4s ease;
+    padding: 0 1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+
+    i {
+      font-size: 1.2rem;
     }
-	.navbar-text,
-	.navbar-link {
-		color: $color-cyan;
-	}
 
-	.nav-item {
-		padding: auto 1.2rem;
-	}
+    &.active,
+    &:hover {
+      color: $color-cyan;
+    }
+  }
 
-	/* change the color of active or hovered links */
-	.nav-link {
-		color: $color-cyan;
-		transition: all 0.4s ease;
-		padding: 0 1rem;
-        margin-right: 1rem;
-		text-decoration: none;
+  .dropdown {
+    /* for dropdown only - change the color of dropdown */
+    &-menu {
+      background-color: $color-green;
+    }
 
-		i {
-			font-size: 1.2rem;
-		}
+    &-item {
+      color: $white;
 
-		&.active,
-		&:hover {
-			color: $color-cyan;
-		}
-	}
-
-	.dropdown {
-		/* for dropdown only - change the color of dropdown */
-		&-menu {
-			background-color: $color-green;
-		}
-
-		&-item {
-			color: $white;
-
-			&:hover,
-			&:focus {
-				color: #191919;
-				background-color: #23cc23;
-			}
-		}
-	}
+      &:hover,
+      &:focus {
+        color: #191919;
+        background-color: #23cc23;
+      }
+    }
+  }
 }
 
 #content {
-	background-color: $body-bg;
+  background-color: $body-bg;
 }
 
+// .prompts {
+//   display: inline-block;
+//   margin-left: 10%;
+//   width: 25%;
+//   height: 100%;
 
-.navbar-custom {
-    .navbar-nav {
-        li {
-            a {
-                color: #e3544a;
-                transition: all 0.3s ease;
-                padding: 0 1rem;
-                text-decoration: none;
-                i {
-                    font-size: 1.5rem;
-                }
-            }
-            a:hover {
-                color: #64ccec;
-            }
-        }
+//   ul {
+//     list-style-type: none;
+
+//     li {
+//       text-transform: uppercase;
+//       cursor: pointer;
+//       /* layout */
+//       position: relative;
+//       padding: 30px;
+//       margin: 15px 0px;
+//       overflow: hidden;
+//       width: 350px;
+//       height: 54.5px;
+
+//       /* font */
+//       color: rgba(211, 87, 91, 0.81);
+//       font-size: 26px;
+//       text-shadow: 0px 0px 3px rgba(211, 87, 91, 0.91);
+
+//       /* Border */
+//       border-style: solid;
+//       border-width: 2px;
+//       border-color: transparent;
+//       /* Animation */
+//       transition: color 1s ease-out;
+//       transition: border-color 1s ease-out;
+
+//       &:hover{
+//         color: $color-cyan;
+//         background:  rgba(0, 0, 0, 0.25);
+        
+//         border-color: $color-cyan;
+      
+//         transition: color 0.23s linear;
+//         transition: border-color 0.23s linear;
+//       }
+      
+//     }
+//   }
+// }
+
+.prompts {
+  display: inline-block;
+  margin-left: 10%;
+  margin-top:10%;
+  margin-bottom: 30%;
+  width: 25%;
+  height: 100%;
+  
+
+  ul {
+    list-style-type: none;
+
+    li {
+      font-family: "BlenderPro", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      font-weight: 100;
+      color: $color-red;
+      font-size: 26px;
+      text-shadow: 0px 0px 3px rgba(211, 87, 91, 0.91);
+
+      padding: 6px 8px;
+
+      border-style: solid;
+      border-width: 2px;
+      border-color: transparent;
+
+      transition: color 0.2s linear;
+      transition: border-color 0.2s linear;
+
+      &:hover {
+        color: $color-cyan;
+        background:  rgba(0, 0, 0, 0.25);
+                
+        border-color: $color-cyan;
+              
+        transition: color 0.2s linear;
+        transition: border-color 0.2s linear;
+      }
     }
+  }
+}
+.navbar-custom {
+  .navbar-nav {
+    li {
+      a {
+        color: #e3544a;
+        transition: all 0.3s ease;
+        padding: 0 1rem;
+        text-decoration: none;
+        i {
+          font-size: 1.5rem;
+        }
+      }
+      a:hover {
+        color: #64ccec;
+      }
+    }
+  }
 }
 
 .intro {
-    text-align: center;
-    padding: 10%;
-    text-shadow: 3px 5px 25px #f7f700ab;
-    font-size: 4rem;
-    color: #f7f500;
-    font-family: "Dosis", Helvetica, Arial, sans-serif;
+  padding: 10%;
+  text-shadow: 3px 5px 25px #f7f700ab;
+  font-size: 4rem;
+  color: #f7f500;
+  
+  font-family: "Dosis", Helvetica, Arial, sans-serif;
 }
 
 .prompt {
-    transition: all 0.3s ease-in-out;
-    padding: 5% 0;
-    text-align: center;
-    h1 {
-        // text-shadow: 3px 5px 25px #64ccec;
-        color: #e3544a;
-        font-family: "Dosis", Helvetica, Arial, sans-serif;
-        font-size: 2rem;
-    }
+  transition: all 0.3s ease-in-out;
+  padding: 5% 0;
+  text-align: center;
+  h1 {
+    // text-shadow: 3px 5px 25px #64ccec;
+    color: #e3544a;
+    font-family: "Dosis", Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+  }
 
-    p {
-        color: #fff;
-    }
+  p {
+    color: #fff;
+  }
 
-    i {
-        color: #e3544a;
-        float: left;
-        font-size: 5rem;
-        margin-right: 3%;
-        margin-left: 10%;
-    }
+  i {
+    color: #e3544a;
+    float: left;
+    font-size: 5rem;
+    margin-right: 3%;
+    margin-left: 10%;
+  }
 }
 
 .prompt:hover {
-    background-color: rgba($color: #000000, $alpha: 0.5);
-    
-    padding: calc(5% - 2px) -2px;
+  background-color: rgba($color: #000000, $alpha: 0.5);
 
-    h1, i {
-        color: #00e3ef;
-    }
+  padding: calc(5% - 2px) -2px;
 
-    border: 1px solid #00e3ef;
+  h1,
+  i {
+    color: #00e3ef;
+  }
+
+  border: 1px solid #00e3ef;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $color-red;
+  border-radius: 10px;
 }
 
 
-::-webkit-scrollbar {
-    width: 5px;
+@mixin glitchCopy { 
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch {
+	position: relative;
+  text-align: center;
+	color: #f7f500;
+  font-family: "BlenderPro",sans-serif;
+  font-weight: 300;
+	font-size: 4em;
+	letter-spacing: .1em;
+	/* Animation provies a slight random skew. Check bottom of doc
+	for more information on how to random skew. */
+	animation: glitch-skew 1s infinite linear alternate-reverse;
+	
+	// Creates a copy before our text. 
+	&::before{
+		// Duplicates our text with the mixin.
+		@include glitchCopy;
+		// Scoots text slightly to the left for the color offset.
+		left: 2px;
+		// Creates the color 'shadow' that happens on the glitch.
+		text-shadow: -2px 0 #00fff9;
+		/* Creates an initial clip for our glitch. This works in
+		a typical top,right,bottom,left fashion and creates a mask
+		to only show a certain part of the glitch at a time. */
+		clip: rect(44px, 450px, 56px, 0);
+		/* Runs our glitch-anim defined below to run in a 5s loop, infinitely,
+		with an alternating animation to keep things fresh. */
+		animation: glitch-anim 5s infinite linear alternate-reverse;
+	}
+	
+	// Creates a copy after our text. Note comments from ::before.
+	&::after {
+		@include glitchCopy;
+		left: -2px;
+		text-shadow: -2px 0 #00fff9, 2px 2px #00fff9;
+		animation: glitch-anim2 1s infinite linear alternate-reverse;
+	}
+}
+
+/* Creates an animation with 20 steaps. For each step, it calculates 
+a percentage for the specific step. It then generates a random clip
+box to be used for the random glitch effect. Also adds a very subtle
+skew to change the 'thickness' of the glitch.*/
+@keyframes glitch-anim {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+			transform: skew((random(100) / 100) + deg);
+    }
   }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
+}
+
+// Same deal, just duplicated for ultra randomness.
+@keyframes glitch-anim2 {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+			transform: skew((random(100) / 100) + deg);
+    }
   }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: $color-red;
-    border-radius: 10px;
+}
+
+// Does the same deal as before, but now only skews. Used for main text.
+@keyframes glitch-skew {
+  $steps: 10;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      transform: skew((random(10) - 5) + deg);
+    }
   }
+}
