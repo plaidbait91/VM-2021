@@ -135,7 +135,8 @@ main {
     padding-left: 0;
 
     
-    li {
+    a {
+      display: block;
       font-family: "BlenderPro", Helvetica, Arial, sans-serif;
       text-transform: uppercase;
       text-decoration: none;
@@ -155,17 +156,17 @@ main {
       transition: color 0.2s linear;
       transition: border-color 0.2s linear;
 
-      a {
+      // a {
         text-decoration: none;
         color: $color-red;
 
-      }
+      // }
 
       &:hover {
 
-        a{
+        // a{
           color: $color-cyan;
-        }
+        // }
        
 
         background: rgba(0, 0, 0, 0.25);
