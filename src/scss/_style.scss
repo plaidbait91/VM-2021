@@ -9,10 +9,9 @@ main {
   background-image: linear-gradient(-180deg, #220000, #070000);
 }
 
-
 @font-face {
-	font-family: 'BlenderPro';
-	src: url('../fonts/Blender Pro Bold.ttf'); 
+  font-family: "BlenderPro";
+  src: url("../fonts/Blender Pro Bold.ttf");
 }
 
 #navbar-container {
@@ -111,38 +110,40 @@ main {
 //       &:hover{
 //         color: $color-cyan;
 //         background:  rgba(0, 0, 0, 0.25);
-        
+
 //         border-color: $color-cyan;
-      
+
 //         transition: color 0.23s linear;
 //         transition: border-color 0.23s linear;
 //       }
-      
+
 //     }
 //   }
 // }
 
 .prompts {
   display: inline-block;
-  margin-left: 10%;
-  margin-top:10%;
+  margin-left: 20%;
+  margin-top: 10%;
   margin-bottom: 30%;
   width: 30%;
   height: 100%;
-  
 
   ul {
     list-style-type: none;
     margin-top: 2rem;
     padding-left: 0;
 
+    
     li {
       font-family: "BlenderPro", Helvetica, Arial, sans-serif;
       text-transform: uppercase;
+      text-decoration: none;
       font-weight: 100;
-      color: $color-red;
       font-size: 26px;
       text-shadow: 0px 0px 3px rgba(211, 87, 91, 0.91);
+
+      cursor: pointer;
 
       padding: 6px 8px;
       margin: 1.5rem 0;
@@ -154,12 +155,23 @@ main {
       transition: color 0.2s linear;
       transition: border-color 0.2s linear;
 
+      a {
+        text-decoration: none;
+        color: $color-red;
+
+      }
+
       &:hover {
-        color: $color-cyan;
-        background:  rgba(0, 0, 0, 0.25);
-                
+
+        a{
+          color: $color-cyan;
+        }
+       
+
+        background: rgba(0, 0, 0, 0.25);
+
         border-color: $color-cyan;
-              
+
         transition: color 0.2s linear;
         transition: border-color 0.2s linear;
       }
@@ -190,7 +202,7 @@ main {
   text-shadow: 3px 5px 25px #f7f700ab;
   font-size: 4rem;
   color: #f7f500;
-  
+
   font-family: "Dosis", Helvetica, Arial, sans-serif;
 }
 
@@ -247,8 +259,7 @@ main {
   border-radius: 10px;
 }
 
-
-@mixin glitchCopy { 
+@mixin glitchCopy {
   content: attr(data-text);
   position: absolute;
   top: 0;
@@ -258,45 +269,41 @@ main {
 }
 
 .glitch {
-	position: relative;
+  position: relative;
   margin-left: 6px;
-	color: #f7f500;
-  font-family: "BlenderPro",sans-serif;
+  color: #f7f500;
+  font-family: "BlenderPro", sans-serif;
   font-weight: 300;
-	font-size: 4em;
-	letter-spacing: .1em;
-	animation: glitch-skew 1s infinite linear alternate-reverse;
-	
-	 
-	&::before{
-		
-		@include glitchCopy;
-		
-		left: 2px;
-		
-		text-shadow: -2px 0 $color-cyan;
-		
-		clip: rect(44px, 450px, 56px, 0);
-		
-		animation: glitch-anim 5s infinite linear alternate-reverse;
-	}
-	
-	
-	&::after {
-		@include glitchCopy;
-		left: -2px;
-		text-shadow: -2px 0 $color-cyan, 2px 2px $color-cyan;
-		animation: glitch-anim2 1s infinite linear alternate-reverse;
-	}
-}
+  font-size: 4em;
+  letter-spacing: 0.1em;
+  animation: glitch-skew 1s infinite linear alternate-reverse;
 
+  &::before {
+    @include glitchCopy;
+
+    left: 2px;
+
+    text-shadow: -2px 0 $color-cyan;
+
+    clip: rect(44px, 450px, 56px, 0);
+
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+  }
+
+  &::after {
+    @include glitchCopy;
+    left: -2px;
+    text-shadow: -2px 0 $color-cyan, 2px 2px $color-cyan;
+    animation: glitch-anim2 1s infinite linear alternate-reverse;
+  }
+}
 
 @keyframes glitch-anim {
   $steps: 20;
   @for $i from 0 through $steps {
     #{percentage($i*(1/$steps))} {
-      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
-			transform: skew((random(100) / 100) + deg);
+      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
+      transform: skew((random(100) / 100) + deg);
     }
   }
 }
@@ -305,8 +312,8 @@ main {
   $steps: 20;
   @for $i from 0 through $steps {
     #{percentage($i*(1/$steps))} {
-      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
-			transform: skew((random(100) / 100) + deg);
+      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
+      transform: skew((random(100) / 100) + deg);
     }
   }
 }
@@ -318,4 +325,25 @@ main {
       transform: skew((random(10) - 5) + deg);
     }
   }
+}
+
+
+.prompt-content {
+
+  padding: 6%;
+
+  h1 {
+    color: #eba926;
+    font-family: "BlenderPro",sans-serif;
+    font-size: 3rem;
+    margin: 3% 0
+  }
+
+  p {
+    color: $color-red;
+    font-family: "Dosis",Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+  }
+
+  
 }

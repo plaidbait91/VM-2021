@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Website for the fest Verba Maximus",
   "scripts": {
-    "dev": "parcel serve src/index.html -p 8080 --no-cache",
+    "dev": "parcel serve src/index.html src/prompts/prompt.html -p 8080 --no-cache",
     "build": "parcel build src/index.html"
   },
   "repository": {
