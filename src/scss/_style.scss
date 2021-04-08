@@ -127,12 +127,14 @@ main {
   margin-left: 10%;
   margin-top:10%;
   margin-bottom: 30%;
-  width: 25%;
+  width: 30%;
   height: 100%;
   
 
   ul {
     list-style-type: none;
+    margin-top: 2rem;
+    padding-left: 0;
 
     li {
       font-family: "BlenderPro", Helvetica, Arial, sans-serif;
@@ -143,6 +145,7 @@ main {
       text-shadow: 0px 0px 3px rgba(211, 87, 91, 0.91);
 
       padding: 6px 8px;
+      margin: 1.5rem 0;
 
       border-style: solid;
       border-width: 2px;
@@ -256,7 +259,8 @@ main {
 
 .glitch {
 	position: relative;
-  text-align: center;
+  // text-align: center;
+  margin-left: 6px;
 	color: #f7f500;
   font-family: "BlenderPro",sans-serif;
   font-weight: 300;
