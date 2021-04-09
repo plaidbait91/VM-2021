@@ -469,7 +469,11 @@ main {
   }
 
   .sub {
-    color: $color-green
+    color: $color-cyan
+  }
+
+  audio {
+    margin: 1rem 0;
   }
 
   .key {
@@ -481,5 +485,33 @@ main {
     font-weight: 100;
   }
 
+  .bold {
+    font-weight: 800;
+    color: #ee4e43;
+  }
+
   
+}
+
+.notice {
+  font-family: "Dosis",Helvetica, Arial, sans-serif;
+  color: $color-red;
+  padding: 5rem;
+
+  li {
+    font-size: 1.5rem;
+    span {
+      color: $color-cyan;
+    }
+  }
+
+  h1 {
+    color: $color-yellow;
+  }
+  
+}
+
+.pImg {
+  height: 400px;
+  margin: 10% 0;
 }
