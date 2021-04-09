@@ -217,9 +217,82 @@ main {
   img {
     width: 80%;
     padding: 5%;
-    margin: 10%;
+    margin: 25% 10% 3% 10%;
+  }
+
+  a {
+    display: block;
+    font-family: "BlenderPro", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    width: 40%;
+    font-weight: 100;
+    font-size: 1rem;
+    text-shadow: 0px 0px 3px rgba(211, 87, 91, 0.91);
+
+    cursor: pointer;
+
+    padding: 6px 8px;
+    margin: 0 auto;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+
+    transition: color 0.2s linear;
+    transition: border-color 0.2s linear;
+
+    // a {
+      text-decoration: none;
+      color: $color-red;
+
+    // }
+
+    &:hover {
+
+      // a{
+        color: $color-cyan;
+      // }
+     
+
+      background: rgba(0, 0, 0, 0.25);
+
+      border-color: $color-cyan;
+      
+
+      transition: color 0.2s linear;
+      transition: border-color 0.2s linear;
+    }
   }
 }
+
+.table-wrapper {
+  padding: 3%;
+
+  h1 {
+    font-family: "Dosis", Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-cyan;
+    margin: 3%;
+  }
+
+  .table {
+    margin: auto;
+    th {
+      
+      color: $color-yellow;
+      font-family: "Dosis", Helvetica, Arial, sans-serif;
+    }
+    td {
+      color: $color-cyan;
+      font-family: "Dosis", Helvetica, Arial, sans-serif;
+    }
+  }
+}
+
+
 
 .navbar-custom {
   .navbar-nav {
