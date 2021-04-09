@@ -126,10 +126,10 @@ main {
 
 .prompts {
   display: inline-block;
-  margin-left: 20%;
+  // margin-left: 10%;
   margin-top: 10%;
-  margin-bottom: 30%;
-  width: 30%;
+  margin-bottom: 10%;
+  width: 100%;
   height: 100%;
 
   ul {
@@ -184,13 +184,13 @@ main {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1092px) {
   .prompts {
-    display: block;
-    margin: 20% auto;
+    // display: block;
+    // margin: 20% auto;
     text-align: center;
-    width: auto;
-    height: 100%;
+    // width: auto;
+    // height: 100%;
   
     ul {
   
@@ -212,6 +212,14 @@ main {
   }
 }
 
+.ad {
+
+  img {
+    width: 80%;
+    padding: 5%;
+    margin: 10%;
+  }
+}
 
 .navbar-custom {
   .navbar-nav {
